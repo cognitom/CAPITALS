@@ -1,0 +1,37 @@
+{
+  "name": "capitals",
+  "version": "1.0.0",
+  "description": "CAPITALS illustrates how to attach *source map* to the code during compilation.",
+  "main": "index.js",
+  "bin": {
+    "capitals": "cli.js"
+  },
+  "scripts": {
+    "test": "mocha test/spec.js",
+    "test-build": "node test/build.js",
+    "test-server": "static test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cognitom/CAPITALS.git"
+  },
+  "keywords": [
+    "example",
+    "source",
+    "maps",
+    "compilation"
+  ],
+  "author": "Tsutomu Kawamura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cognitom/CAPITALS/issues"
+  },
+  "homepage": "https://github.com/cognitom/CAPITALS#readme",
+  "dependencies": {
+    "source-map": "^0.5.6"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "node-static": "^0.7.9"
+  }
+}
