@@ -20,7 +20,7 @@ console.log(message)
 
 ## Compilation
 
-I'd like to focus to show how we can play with *source map*, so the compilation from CAPITALS is deadly simple: just convert everything into lower case.
+I'd like to focus to show how we can play with *source map*, so the compilation from CAPITALS is deadly simple: just convert everything into lower case. See [here](https://github.com/cognitom/CAPITALS/blob/master/index.js#L24).
 
 ```javascript
 srcCode.toLowerCase()
@@ -68,8 +68,8 @@ $ ./cli test/fixture/HELLO.js ../hello.js
 
 You will get two files:
 
-- hello.js: lowercased script
-- hello.js.map: source map
+- `hello.js`: lowercased script
+- `hello.js.map`: source map
 
 `hello.js.map` could be like this:
 
