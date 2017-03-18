@@ -84,6 +84,25 @@ You will get two files:
 }
 ```
 
+## Source Map Generator
+
+Fortunately, an utility library is provided from Mozilla:
+
+- https://github.com/mozilla/source-map
+
+The library has some classes, but you need to use only [SourceMapGenerator](https://github.com/mozilla/source-map#sourcemapgenerator) in basic usage. This is handy to generate `mappings` and json file.
+
+See [index.js](index.js). `compile()` function do compilation and attaching source map. Inside it `addMapping()` is called to map the original code to the generated one:
+
+```javascript
+// maps L3:0 to L3:0
+gen.addMapping({
+  source: 'fixture/HELLO.js',
+  original: { line: 3, column: 0 },
+  generated: { line: 3, column: 0 }
+})
+```
+
 ## License
 
 MIT © Tsutomu Kawamura
